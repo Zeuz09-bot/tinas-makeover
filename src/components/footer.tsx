@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactElement } from "react";
 import { bookNowLink, whatsappDisplayNumber } from "@/lib/whatsapp";
-import { BRAND, CONTACT, SOCIAL_LINKS } from "@/lib/site";
+import { BRAND, CONTACT, SOCIAL_GROUPS } from "@/lib/site";
 import { Container } from "@/components/container";
 
 const iconMap: Record<string, ReactElement> = {
@@ -57,25 +57,34 @@ export function Footer() {
         <div className="space-y-4">
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-muted/70">Connect With Us</p>
-            <ul className="mt-4 flex flex-wrap justify-center gap-4 md:justify-end">
-              {SOCIAL_LINKS.map((item) => {
-                const href = item.label === "WhatsApp" ? bookNowLink : item.href || bookNowLink;
-                return (
-                  <li key={item.label}>
-                    <Link
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-2 text-xs uppercase tracking-[0.2em] text-ink transition hover:border-accent hover:bg-accent hover:text-white"
-                      aria-label={item.label}
-                    >
-                      {iconMap[item.icon ?? "instagram"]}
-                      <span className="hidden sm:inline">{item.label}</span>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+            <div className="mt-4 space-y-3">
+              {SOCIAL_GROUPS.map((group) => (
+                <div
+                  key={group.key}
+                  className="flex flex-wrap items-center justify-center gap-3 text-xs text-muted/80 md:justify-end"
+                >
+                  <span className="font-semibold uppercase tracking-[0.25em] text-muted/70">
+                    {group.brand}
+                  </span>
+                  <ul className="flex flex-wrap justify-center gap-2 md:justify-end">
+                    {group.links.map((item) => (
+                      <li key={`${group.key}-${item.label}`}>
+                        <Link
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-2 text-[0.7rem] uppercase tracking-[0.2em] text-ink transition hover:border-accent hover:bg-accent hover:text-white"
+                          aria-label={`${group.brand} on ${item.label}`}
+                        >
+                          {iconMap[item.icon ?? "instagram"]}
+                          <span className="hidden sm:inline">{item.label}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="text-xs text-muted/70 md:text-sm">
             <p>

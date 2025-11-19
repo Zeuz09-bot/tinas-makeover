@@ -9,9 +9,9 @@ export const BRAND = {
 };
 
 export const CONTACT = {
-  phone: "+2348070822409",
+  phone: "+2348138534279",
   email: "info@tinasmakeover.com",
-  address: "45 Aurora Lane, Victoria Island, Lagos",
+  address: "No 6, Tiwatope Shopping Complex, NTA junction, along Alapata road, Ikare Akoko, Ondo State",
   hours: {
     weekdays: "Mon–Sat: 10am–8pm",
     sunday: "Sun: 10am–6pm",
@@ -32,6 +32,51 @@ export const SOCIAL_LINKS = [
   { label: "Facebook", href: "https://facebook.com/tinasmakeover", icon: "facebook" },
   { label: "TikTok", href: "https://tiktok.com/@tinasmakeover", icon: "tiktok" },
   { label: "WhatsApp", href: "", icon: "whatsapp" },
+];
+
+export const SOCIAL_GROUPS = [
+  {
+    key: "tinas-makeover",
+    brand: "Tina's Makeover",
+    links: [
+      {
+        label: "Instagram",
+        href: "https://www.instagram.com/tinas.makeover?igsh=MWJobGRtMmV0Z2Z2Ng%3D%3D&utm_source=qr",
+        icon: "instagram",
+      },
+      {
+        label: "TikTok",
+        href: "https://www.tiktok.com/@tinas.makeover",
+        icon: "tiktok",
+      },
+      {
+        label: "Facebook",
+        href: "https://www.facebook.com/share/1Fh5oWGWvJ/?mibextid=wwXIfr",
+        icon: "facebook",
+      },
+    ],
+  },
+  {
+    key: "hairbytee",
+    brand: "Hairbytee",
+    links: [
+      {
+        label: "Instagram",
+        href: "https://www.instagram.com/hairby_tee55?igsh=MWVmbmloam1hYWVpbQ%3D%3D&utm_source=qr",
+        icon: "instagram",
+      },
+      {
+        label: "TikTok",
+        href: "https://www.tiktok.com/@hairbytee55",
+        icon: "tiktok",
+      },
+      {
+        label: "Facebook",
+        href: "https://www.facebook.com/share/17mKuxY4zk/?mibextid=wwXIfr",
+        icon: "facebook",
+      },
+    ],
+  },
 ];
 
 export const CTA_COPY = {

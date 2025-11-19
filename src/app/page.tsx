@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
 import { ContactForm } from "@/components/contact-form";
 import { ProductCard } from "@/components/product-card";
-import { BRAND, CTA_COPY, STOCK_PHOTOS } from "@/lib/site";
+import { BRAND, CTA_COPY, SOCIAL_GROUPS, STOCK_PHOTOS } from "@/lib/site";
 import { brandNarrative, productItems } from "@/data/content";
 
 const services = [
@@ -45,6 +45,7 @@ export default function Home() {
       <Services />
       <ProductsShowcase />
       <Highlights />
+      <ConnectStrip />
       <ContactSection />
     </>
   );
@@ -93,6 +94,42 @@ function Hero() {
               View Portfolio
             </Link>
           </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function ConnectStrip() {
+  return (
+    <section className="bg-white py-16">
+      <Container className="space-y-10 text-center text-ink">
+        <SectionHeading
+          title="Connect With Us"
+          subtitle="Follow our glam journeys, tutorials, and behind-the-scenes moments across makeup and hair."
+        />
+        <div className="grid gap-6 md:grid-cols-2">
+          {SOCIAL_GROUPS.map((group) => (
+            <div
+              key={group.key}
+              className="space-y-4 rounded-3xl border border-border bg-white/90 p-6 text-sm text-muted/80 shadow-[0_24px_60px_rgba(217,138,163,0.12)]"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-muted/70">{group.brand}</p>
+              <div className="flex flex-wrap justify-center gap-3 text-[0.7rem] uppercase tracking-[0.25em] md:justify-center">
+                {group.links.map((link) => (
+                  <Link
+                    key={`${group.key}-${link.label}`}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full border border-border px-4 py-2 text-ink transition hover:border-accent hover:bg-accent hover:text-white"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </Container>
     </section>
@@ -227,6 +264,30 @@ function ContactSection() {
             <span className="rounded-full border border-border px-4 py-2">Bridal Parties</span>
             <span className="rounded-full border border-border px-4 py-2">Editorial Shoots</span>
             <span className="rounded-full border border-border px-4 py-2">Trainings & Classes</span>
+          </div>
+          <div className="mt-4 space-y-2 text-xs text-muted/80">
+            <p className="uppercase tracking-[0.3em] text-muted/50">Social</p>
+            <div className="space-y-1">
+              {SOCIAL_GROUPS.map((group) => (
+                <div key={group.key} className="flex flex-wrap items-center gap-2">
+                  <span className="font-semibold uppercase tracking-[0.2em] text-muted/70">{group.brand}</span>
+                  <span className="hidden text-muted/40 sm:inline">·</span>
+                  <div className="flex flex-wrap gap-2">
+                    {group.links.map((link) => (
+                      <Link
+                        key={`${group.key}-${link.label}`}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[0.7rem] uppercase tracking-[0.25em] text-ink underline-offset-4 hover:text-accent hover:underline"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className="rounded-3xl border border-border bg-white/90 p-8 shadow-[0_24px_70px_rgba(217,122,166,0.2)]">
