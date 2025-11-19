@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fff9f6;
+  --foreground: #3e2932;
+  --card: #ffffff;
+  --muted: #7a5561;
+  --accent: #d97aa6;
+  --accent-soft: #f7dce9;
+  --border: rgba(217, 122, 166, 0.35);
+  --ink: #3e2932;
+  --focus-ring: rgba(217, 122, 166, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  font-family: var(--font-montserrat), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background-color: var(--color-rich-black);
+  color: var(--color-foreground);
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.text-ink {
+  color: var(--color-ink);
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-montserrat), "Segoe UI", sans-serif;
+}
+
+.gradient-blush {
+  background-image: linear-gradient(135deg, rgba(247, 220, 233, 0.95), rgba(255, 242, 237, 0.85));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+@keyframes float-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: float-in 0.6s ease-out both;
+}
+
+.soft-shadow {
+  box-shadow: 0 25px 55px rgba(62, 41, 50, 0.15);
+}
