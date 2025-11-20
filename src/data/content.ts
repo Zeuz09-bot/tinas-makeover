@@ -44,21 +44,28 @@ const bridalMakeupGallery: GalleryMediaItem[] = [
       "IMG_0231.jpg",
       "IMG_0232.jpg",
       "IMG_0422.JPG",
+      "IMG_0457.jpg",
       "IMG_0459.jpg",
+      "IMG_0460.jpg",
       "IMG_0469.jpg",
       "IMG_9271.jpg",
       "ZHK-2.jpg",
       "ZHK-4.jpg",
+      "weddings (1).jpg",
+      "weddings (2).jpg",
+      "weddings (3).jpg",
+      "weddings (4).JPG",
+      "weddings (5).jpg",
+      "weddings (6).jpg",
+      "weddings (7).jpg",
+      "weddings (8).jpg",
+      "weddings (9).jpg",
+      "weddings (10).jpg",
+      "weddings_(1).jpg",
+      "weddings_(2).jpg",
     ],
     "Bridal glam look"
   ),
-  ...createVideoEntries([
-    {
-      poster: "/images/queen-b/bridal/IMG_0231.jpg",
-      video: "/images/queen-b/tutorials/4a186712b8124107a712e3b7f8770b13.MP4",
-      alt: "Bridal tutorial behind the scenes",
-    },
-  ]),
 ];
 
 const eventGlamGallery: GalleryMediaItem[] = [
@@ -73,19 +80,33 @@ const eventGlamGallery: GalleryMediaItem[] = [
       "IMG_8234.jpg",
       "IMG_8264.jpg",
       "IMG_8267.jpg",
+      "birthdays (1).jpg",
+      "birthdays (2).jpg",
+      "birthdays (3).jpg",
+      "birthdays (4).jpg",
+      "birthdays (5).jpg",
+      "birthdays (6).jpg",
+      "birthdays (7).jpg",
+      "birthdays (8).jpg",
+      "birthdays_(1).jpg",
+      "birthdays_(2).jpg",
+      "birthdays_(3).jpg",
+      "birthdays_(4).jpg",
     ],
     "Birthday glam moment"
   ),
-  ...createVideoEntries([
-    {
-      poster: "/images/queen-b/birthdays/IMG_6829.jpg",
-      video: "/images/queen-b/tutorials/3c61f08bfb1c46af891d5e80ae65744f.MP4",
-      alt: "Event glam tutorial clip",
-    },
-  ]),
 ];
 
 const photoShootGallery: GalleryMediaItem[] = [
+  ...createImageEntries(
+    "/images/queen-b/photoshoot/",
+    [
+      "PHOTO SHOOT (1).jpg",
+      "PHOTO SHOOT (2).jpg",
+      "PHOTO SHOOT (3).jpg",
+    ],
+    "Editorial photoshoot capture"
+  ),
   ...createImageEntries(
     "/images/queen-b/special-occasions/",
     [
@@ -96,59 +117,173 @@ const photoShootGallery: GalleryMediaItem[] = [
       "IMG_0927.jpg",
       "IMG_0928.jpg",
       "IMG_0929.jpg",
+      "SPECIAL OCASSIONS (1).JPG",
+      "SPECIAL OCASSIONS (2).jpg",
+      "SPECIAL OCASSIONS (3).jpg",
+      "SPECIAL OCASSIONS (4).jpg",
+      "SPECIAL OCASSIONS (5).jpg",
+      "SPECIAL OCASSIONS (6).jpg",
+      "SPECIAL OCASSIONS (7).jpg",
+      "SPECIAL_OCASSIONS_(1).jpg",
     ],
     "Editorial glam capture"
   ),
-  ...createVideoEntries([
-    {
-      poster: "/images/queen-b/special-occasions/IMG_0926.jpg",
-      video: "/images/queen-b/tutorials/RPReplay_Final1763318148.mov",
-      alt: "Photoshoot behind the scenes reel",
-    },
-  ]),
 ];
 
 const makeupTrainingGallery: GalleryMediaItem[] = [
   ...createImageEntries(
     "/images/queen-b/hair-installation/",
-    ["IMG_0420.PNG", "IMG_0421.jpg"],
+    [
+      "BRIDAL HAIR INSTALLATION (1).jpg",
+      "HAIR INSTALLATION (1).PNG",
+      "HAIR INSTALLATION (1).jpg",
+      "HAIR INSTALLATION (2).jpg",
+      "HAIR INSTALLATION (3).jpg",
+      "HAIR_INSTALLATION_(1).jpg",
+      "IMG_0420.PNG",
+      "IMG_0421.jpg",
+      "IMG_0928.jpg",
+    ],
     "Training session highlight"
   ),
   ...createVideoEntries([
     {
       poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      video: "/images/queen-b/tutorials/3c61f08bfb1c46af891d5e80ae65744f.MP4",
+      alt: "Hands-on tutorial clip 1",
+      label: "Training Tutorial",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      video: "/images/queen-b/tutorials/4a186712b8124107a712e3b7f8770b13.MP4",
+      alt: "Hands-on tutorial clip 2",
+      label: "Training Tutorial",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      video: "/images/queen-b/tutorials/TUTORIALS (1).MP4",
+      alt: "Hands-on tutorial clip 3",
+      label: "Training Tutorial",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      video: "/images/queen-b/tutorials/TUTORIALS (1).mov",
+      alt: "Hands-on tutorial clip 4",
+      label: "Training Tutorial",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      video: "/images/queen-b/tutorials/TUTORIALS (2).MP4",
+      alt: "Hands-on tutorial clip 5",
+      label: "Training Tutorial",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      video: "/images/queen-b/tutorials/TUTORIALS (3).MP4",
+      alt: "Hands-on tutorial clip 6",
+      label: "Training Tutorial",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      video: "/images/queen-b/tutorials/RPReplay_Final1763318148.mov",
+      alt: "Hands-on tutorial clip 7",
+      label: "Training Tutorial",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
       video: "/images/queen-b/tutorials/c8c13f9fe7854b1295db30706dbd429c.MP4",
-      alt: "Hands-on masterclass clip",
+      alt: "Hands-on tutorial clip 8",
+      label: "Training Tutorial",
     },
   ]),
 ];
 
 const bridalHairGallery: GalleryMediaItem[] = [
   ...createImageEntries(
-    "/images/queen-b/bridal/",
-    ["IMG_0457.jpg", "IMG_0460.jpg"],
-    "Bridal hair prep"
-  ),
-  ...createImageEntries(
     "/images/queen-b/hair-installation/",
-    ["IMG_0928.jpg"],
-    "Install in progress"
+    [
+      "BRIDAL HAIR INSTALLATION (1).jpg",
+      "HAIR INSTALLATION (1).PNG",
+      "HAIR INSTALLATION (1).jpg",
+      "HAIR INSTALLATION (2).jpg",
+      "HAIR INSTALLATION (3).jpg",
+      "HAIR_INSTALLATION_(1).jpg",
+      "IMG_0420.PNG",
+      "IMG_0421.jpg",
+      "IMG_0928.jpg",
+    ],
+    "Bridal hair installation"
   ),
   ...createVideoEntries([
     {
       poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
       video: "/images/queen-b/hair-installation/091d425f8167410eae2508753cbfde79.MOV",
-      alt: "Bridal install walk-through",
+      alt: "Bridal install clip 1",
     },
     {
       poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
       video: "/images/queen-b/hair-installation/9c1cec86aec64cf29a449a5099759634.MOV",
-      alt: "Seamless install demo",
+      alt: "Bridal install clip 2",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
+      video: "/images/queen-b/hair-installation/BRIDAL HAIR INSTALLATION (1).mov",
+      alt: "Bridal install clip 3",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
+      video: "/images/queen-b/hair-installation/BRIDAL HAIR INSTALLATION (2).mov",
+      alt: "Bridal install clip 4",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
+      video: "/images/queen-b/hair-installation/HAIR INSTALLATION (1).MOV",
+      alt: "Bridal install clip 5",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
+      video: "/images/queen-b/hair-installation/HAIR INSTALLATION (2).MOV",
+      alt: "Bridal install clip 6",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
+      video: "/images/queen-b/hair-installation/HAIR INSTALLATION (3).MOV",
+      alt: "Bridal install clip 7",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
+      video: "/images/queen-b/hair-installation/HAIR INSTALLATION (4).MOV",
+      alt: "Bridal install clip 8",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
+      video: "/images/queen-b/hair-installation/HAIR INSTALLATION (5).mov",
+      alt: "Bridal install clip 9",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
+      video: "/images/queen-b/hair-installation/HAIR INSTALLATION (6).MOV",
+      alt: "Bridal install clip 10",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
+      video: "/images/queen-b/hair-installation/HAIR INSTALLATION (7).mov",
+      alt: "Bridal install clip 11",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
+      video: "/images/queen-b/hair-installation/HAIR INSTALLATION (8).mov",
+      alt: "Bridal install clip 12",
+    },
+    {
+      poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
+      video: "/images/queen-b/hair-installation/HAIR INSTALLATION (9).mov",
+      alt: "Bridal install clip 13",
     },
     {
       poster: "/images/queen-b/hair-installation/IMG_0421.jpg",
       video: "/images/queen-b/hair-installation/d451497445a7457480f0f9ebf64d76fc.MOV",
-      alt: "Finishing veil placement",
+      alt: "Bridal install clip 14",
     },
   ]),
 ];
@@ -181,19 +316,32 @@ const hairRevampGallery: GalleryMediaItem[] = [
 const wiggingColoringGallery: GalleryMediaItem[] = [
   ...createImageEntries(
     "/images/queen-b/hair/",
-    ["IMG_1034.jpg", "IMG_1044.jpg"],
+    [
+      "HAIR (1).jpg",
+      "HAIR (2).jpg",
+      "HAIR (3).jpg",
+      "HAIR (4).jpg",
+      "HAIR (5).jpg",
+      "HAIR (6).jpg",
+      "IMG_1034.jpg",
+      "IMG_1036.jpg",
+      "IMG_1040.jpg",
+      "IMG_1044.jpg",
+      "IMG_1051.jpg",
+      "IMG_6949.jpg",
+    ],
     "Wigging & coloring detail"
-  ),
-  ...createImageEntries(
-    "/images/queen-b/hair-installation/",
-    ["IMG_0421.jpg"],
-    "Lace customization"
   ),
   ...createVideoEntries([
     {
       poster: "/images/queen-b/hair/IMG_1044.jpg",
+      video: "/images/queen-b/hair/315305c8071c45f3b4d0b6e8fd47598e.MOV",
+      alt: "Color melt transformation 1",
+    },
+    {
+      poster: "/images/queen-b/hair/IMG_1044.jpg",
       video: "/images/queen-b/hair/950bb325491e498ba3c608bbacfe2521.MOV",
-      alt: "Color melt transformation",
+      alt: "Color melt transformation 2",
     },
   ]),
 ];
