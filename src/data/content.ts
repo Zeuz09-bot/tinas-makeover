@@ -162,15 +162,25 @@ const bridalHairGallery: GalleryMediaItem[] = [
 
 const hairRevampGallery: GalleryMediaItem[] = [
   ...createImageEntries(
-    "/images/queen-b/hair/",
-    ["IMG_1036.jpg", "IMG_1040.jpg", "IMG_1051.jpg", "IMG_6949.jpg"],
+    "/images/queen-b/hair-revamping/",
+    ["HAIR REVAMP (1).jpg", "HAIR REVAMP (2).jpg"],
     "Hair revamp result"
   ),
   ...createVideoEntries([
     {
-      poster: "/images/queen-b/hair/IMG_1036.jpg",
-      video: "/images/queen-b/hair/315305c8071c45f3b4d0b6e8fd47598e.MOV",
-      alt: "Revamp process video",
+      poster: "/images/queen-b/hair-revamping/HAIR REVAMP (1).jpg",
+      video: "/images/queen-b/hair-revamping/HAIR REVAMP (1).MOV",
+      alt: "Hair revamp process 1",
+    },
+    {
+      poster: "/images/queen-b/hair-revamping/HAIR REVAMP (2).jpg",
+      video: "/images/queen-b/hair-revamping/HAIR REVAMP (2).MOV",
+      alt: "Hair revamp process 2",
+    },
+    {
+      poster: "/images/queen-b/hair-revamping/HAIR REVAMP (1).jpg",
+      video: "/images/queen-b/hair-revamping/HAIR REVAMP (3).MOV",
+      alt: "Hair revamp process 3",
     },
   ]),
 ];
@@ -255,6 +265,17 @@ export const hairPackages: ServicePackage[] = [
     image: STOCK_PHOTOS.wigStyling,
     highlights: ["Glueless installs", "Balayage & highlights", "Protective styling"],
     href: "/services/wigging-coloring",
+  },
+  {
+    title: "Hair Products Available",
+    description: "Explore our curated boutique of ready-to-wear units, closures, and luxury wigs.",
+    image: "/images/queen-b/hair-product-available/20''BOUNCY UNIT.jpg",
+    highlights: [
+      "Hand-picked premium hair pieces",
+      "Limited boutique collections",
+      "Order via WhatsApp for pickup or delivery",
+    ],
+    href: "/products",
   },
 ];
 
@@ -446,6 +467,69 @@ const formatGalleryItems = (services: ServiceDetail[]) =>
     }))
   );
 
+const standaloneVideoGallery: GalleryMediaItem[] = createVideoEntries([
+  {
+    poster: STOCK_PHOTOS.galleryVideoPoster,
+    video: "/images/queen-b/gallery/videos/GALLERY (1).MP4",
+    alt: "Studio gallery video 1",
+    label: "Gallery Video",
+  },
+  {
+    poster: STOCK_PHOTOS.galleryVideoPoster,
+    video: "/images/queen-b/gallery/videos/GALLERY (2).MP4",
+    alt: "Studio gallery video 2",
+    label: "Gallery Video",
+  },
+  {
+    poster: STOCK_PHOTOS.galleryVideoPoster,
+    video: "/images/queen-b/gallery/videos/GALLERY (3).MP4",
+    alt: "Studio gallery video 3",
+    label: "Gallery Video",
+  },
+  {
+    poster: STOCK_PHOTOS.galleryVideoPoster,
+    video: "/images/queen-b/gallery/videos/GALLERY (4).MP4",
+    alt: "Studio gallery video 4",
+    label: "Gallery Video",
+  },
+  {
+    poster: STOCK_PHOTOS.galleryVideoPoster,
+    video: "/images/queen-b/gallery/videos/GALLERY (5).MP4",
+    alt: "Studio gallery video 5",
+    label: "Gallery Video",
+  },
+  {
+    poster: STOCK_PHOTOS.galleryVideoPoster,
+    video: "/images/queen-b/gallery/videos/14cb673227e64712afafda5b5fd560cb.MP4",
+    alt: "Studio gallery video 6",
+    label: "Gallery Video",
+  },
+  {
+    poster: STOCK_PHOTOS.galleryVideoPoster,
+    video: "/images/queen-b/gallery/videos/46a4bdf601e747ee9609c228f9829d86.MP4",
+    alt: "Studio gallery video 7",
+    label: "Gallery Video",
+  },
+  {
+    poster: STOCK_PHOTOS.galleryVideoPoster,
+    video: "/images/queen-b/gallery/videos/7f702216434e4ae2b76e3b8cca8673f1.MP4",
+    alt: "Studio gallery video 8",
+    label: "Gallery Video",
+  },
+  {
+    poster: STOCK_PHOTOS.galleryVideoPoster,
+    video: "/images/queen-b/gallery/videos/dddae93b3c5445a4a8be927c482a016e.MP4",
+    alt: "Studio gallery video 9",
+    label: "Gallery Video",
+  },
+  {
+    poster: STOCK_PHOTOS.galleryVideoPoster,
+    video: "/images/queen-b/gallery/videos/e1d71dd4c0b946ceae08a531f507157e.MP4",
+    alt: "Studio gallery video 10",
+    label: "Gallery Video",
+  },
+]);
+
 export const galleryCollections: Array<{
   title: string;
   items: GalleryMediaItem[];
@@ -461,6 +545,13 @@ export const galleryCollections: Array<{
   {
     title: "Hair Services",
     items: formatGalleryItems(serviceDetails.filter((service) => service.category === "hair")),
+  },
+  {
+    title: "Videos",
+    items: [
+      ...formatGalleryItems(serviceDetails).filter((item) => item.isVideo),
+      ...standaloneVideoGallery,
+    ],
   },
   ...serviceDetails.map((service) => ({
     title: service.title,
@@ -479,51 +570,71 @@ export interface ProductItem {
 
 export const productItems: ProductItem[] = [
   {
-    slug: "body-wave-lace-wig",
-    title: "Luxury Body Wave Lace Wig (18\")",
+    slug: "20-bouncy-unit",
+    title: "20\" Bouncy Unit",
     description:
-      "Pre-plucked HD lace wig with soft body wave texture for effortless feminine glam. Lightweight, breathable, and ready to wear with minimal styling.",
-    image: STOCK_PHOTOS.hairModel,
+      "20-inch bouncy luxury unit perfect for everyday glam and special occasions.",
+    image: "/images/queen-b/hair-product-available/20''BOUNCY UNIT.jpg",
     features: [
-      "100% human hair with natural density",
-      "Pre-bleached knots and elastic band",
-      "Includes satin storage bag & care guide",
+      "Soft, bouncy texture with premium volume",
+      "Pre-styled for easy wear",
+      "Ideal for birthdays, events, and everyday looks",
     ],
     gallery: [
-      { src: STOCK_PHOTOS.hairModel, alt: "Body wave lace wig" },
-      { src: STOCK_PHOTOS.bridalHairDetail, alt: "Soft waves detail" },
+      { src: "/images/queen-b/hair-product-available/20''BOUNCY UNIT.jpg", alt: "20\" Bouncy Unit" },
     ],
   },
   {
-    slug: "silk-press-care-kit",
-    title: "Silk Press Maintenance Kit",
+    slug: "5-by-3-bouncy-wig",
+    title: "5x3 Bouncy Wig",
     description:
-      "Studio-formulated cleansing, conditioning, and finishing trio that keeps your silk press glossy between appointments.",
-    image: STOCK_PHOTOS.hairColoring,
+      "Hand-picked bouncy wig with full density for statement glam and soft movement.",
+    image: "/images/queen-b/hair-product-available/5 BY 3 BOUNCY WIG.jpg",
     features: [
-      "Sulphate-free cleansing shampoo",
-      "Moisture-rich smoothing mask",
-      "Thermal protectant finishing serum",
+      "Balanced volume for everyday or event wear",
+      "Comfortable fit for long hours",
+      "Perfect for soft, feminine glam",
     ],
     gallery: [
-      { src: STOCK_PHOTOS.hairColoring, alt: "Silk press maintenance products" },
-      { src: STOCK_PHOTOS.wigStyling, alt: "Stylist applying serum" },
+      { src: "/images/queen-b/hair-product-available/5 BY 3 BOUNCY WIG.jpg", alt: "5x3 Bouncy Wig" },
     ],
   },
   {
-    slug: "glueless-luxury-closure",
-    title: "Glueless Luxury Closure Wig (14\")",
+    slug: "5x5-sod-virgin-3tone-pixxy-wig-16",
+    title: "5x5 SOD Virgin 3-Tone Pixxy Wig 16\"",
     description:
-      "Everyday-ready bob unit with invisible closure finish. Comes pre-styled with soft curls and adjustable straps for a secure fit.",
-    image: STOCK_PHOTOS.wigStyling,
+      "Luxury 3-tone pixxy wig in 16 inches with a soft, feminine finish.",
+    image:
+      "/images/queen-b/hair-product-available/5X5 SOD VIRGIN 3TONE PIXXY WIG 16'' (1).jpg",
     features: [
-      "Cut, styled, and ready to wear",
-      "Breathable mesh construction",
-      "Free tightening and refresh within 30 days",
+      "Soft blend of three complementary tones",
+      "5x5 closure for a natural-looking part",
+      "Ideal for clients who love color with subtle dimension",
     ],
     gallery: [
-      { src: STOCK_PHOTOS.wigStyling, alt: "Glueless closure wig" },
-      { src: STOCK_PHOTOS.hairModel, alt: "Polished bob style" },
+      {
+        src: "/images/queen-b/hair-product-available/5X5 SOD VIRGIN 3TONE PIXXY WIG 16'' (1).jpg",
+        alt: "5x5 SOD Virgin 3-Tone Pixxy Wig 16\"",
+      },
+    ],
+  },
+  {
+    slug: "sod-phillipine-lux-unit",
+    title: "SOD Phillipine Lux Unit",
+    description:
+      "Very full Phillipine Lux unit with dark root chestnut tones for rich, luxe glam.",
+    image:
+      "/images/queen-b/hair-product-available/SOD PHILLIPINE LUX UNIT IN DARK ROOT CHENSNUT HAIR, VERY FULL, FACTORY MADE.jpg",
+    features: [
+      "Full density for high-impact silhouettes",
+      "Dark root chestnut blend for depth",
+      "Factory-made finish for consistent quality",
+    ],
+    gallery: [
+      {
+        src: "/images/queen-b/hair-product-available/SOD PHILLIPINE LUX UNIT IN DARK ROOT CHENSNUT HAIR, VERY FULL, FACTORY MADE.jpg",
+        alt: "SOD Phillipine Lux Unit",
+      },
     ],
   },
 ];

@@ -97,7 +97,7 @@ export const STOCK_PHOTOS = {
   wigStyling: "/images/queen-b/hair-installation/IMG_0421.jpg",
   salonInterior: "/images/queen-b/special-occasions/320925BF-50C3-45DA-A4EF-8F9EA4CD00A0.JPG",
   contactAgent: "/images/queen-b/birthdays/IMG_0418.jpg",
-  founderPortrait: "/images/queen-b/ceo/IMG_1030.jpg",
+  founderPortrait: "/images/queen-b/ceo/CEO PICTURE.JPG",
   glamCloseup: "/images/queen-b/birthdays/IMG_0463.jpg",
   bridalHairDetail: "/images/queen-b/bridal/IMG_0459.jpg",
   hairColoring: "/images/queen-b/hair/IMG_1040.jpg",
