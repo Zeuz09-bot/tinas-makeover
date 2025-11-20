@@ -1,0 +1,28 @@
+﻿[2025-11-20 20:05:43] [info] === Asset sync started ===
+[2025-11-20 20:05:43] [backup] Backed up public\images\queen-b\bridal\9C195688-E296-43A3-ACFC-29BD3D5A6E2F.HEIC to backup_assets_sync
+[2025-11-20 20:05:43] [info] Removed bridal image (non-keep): C:\Users\seyib\Pictures\tinas-exquisite\tinas-exquisite\public\images\queen-b\bridal\9C195688-E296-43A3-ACFC-29BD3D5A6E2F.HEIC
+[2025-11-20 20:05:43] [backup] Backed up public\images\queen-b\bridal\CFB1A762-ED6F-4782-B9C8-A54EDA0B00A2.HEIC to backup_assets_sync
+[2025-11-20 20:05:43] [info] Removed bridal image (non-keep): C:\Users\seyib\Pictures\tinas-exquisite\tinas-exquisite\public\images\queen-b\bridal\CFB1A762-ED6F-4782-B9C8-A54EDA0B00A2.HEIC
+[2025-11-20 20:05:43] [backup] Backed up public\images\queen-b\bridal\IMG_0231.jpg to backup_assets_sync
+[2025-11-20 20:05:43] [info] Removed bridal image (non-keep): C:\Users\seyib\Pictures\tinas-exquisite\tinas-exquisite\public\images\queen-b\bridal\IMG_0231.jpg
+[2025-11-20 20:05:43] [backup] Backed up public\images\queen-b\bridal\IMG_0232.jpg to backup_assets_sync
+[2025-11-20 20:05:43] [info] Removed bridal image (non-keep): C:\Users\seyib\Pictures\tinas-exquisite\tinas-exquisite\public\images\queen-b\bridal\IMG_0232.jpg
+[2025-11-20 20:05:43] [backup] Backed up public\images\queen-b\bridal\IMG_0422.JPG to backup_assets_sync
+[2025-11-20 20:05:43] [info] Removed bridal image (non-keep): C:\Users\seyib\Pictures\tinas-exquisite\tinas-exquisite\public\images\queen-b\bridal\IMG_0422.JPG
+[2025-11-20 20:05:43] [backup] Backed up public\images\queen-b\bridal\IMG_0457.jpg to backup_assets_sync
+[2025-11-20 20:05:43] [info] Removed bridal image (non-keep): C:\Users\seyib\Pictures\tinas-exquisite\tinas-exquisite\public\images\queen-b\bridal\IMG_0457.jpg
+[2025-11-20 20:05:43] [backup] Backed up public\images\queen-b\bridal\IMG_0459.jpg to backup_assets_sync
+[2025-11-20 20:05:43] [info] Removed bridal image (non-keep): C:\Users\seyib\Pictures\tinas-exquisite\tinas-exquisite\public\images\queen-b\bridal\IMG_0459.jpg
+[2025-11-20 20:05:43] [backup] Backed up public\images\queen-b\bridal\IMG_0469.jpg to backup_assets_sync
+[2025-11-20 20:05:43] [info] Removed bridal image (non-keep): C:\Users\seyib\Pictures\tinas-exquisite\tinas-exquisite\public\images\queen-b\bridal\IMG_0469.jpg
+[2025-11-20 20:05:43] [backup] Backed up public\images\queen-b\bridal\IMG_9271.jpg to backup_assets_sync
+[2025-11-20 20:05:43] [info] Removed bridal image (non-keep): C:\Users\seyib\Pictures\tinas-exquisite\tinas-exquisite\public\images\queen-b\bridal\IMG_9271.jpg
+[2025-11-20 20:05:43] [backup] Backed up public\images\queen-b\bridal\ZHK-2.jpg to backup_assets_sync
+[2025-11-20 20:05:43] [info] Removed bridal image (non-keep): C:\Users\seyib\Pictures\tinas-exquisite\tinas-exquisite\public\images\queen-b\bridal\ZHK-2.jpg
+[2025-11-20 20:05:43] [backup] Backed up public\images\queen-b\bridal\ZHK-4.jpg to backup_assets_sync
+[2025-11-20 20:05:43] [info] Removed bridal image (non-keep): C:\Users\seyib\Pictures\tinas-exquisite\tinas-exquisite\public\images\queen-b\bridal\ZHK-4.jpg
+[2025-11-20 20:05:43] [warn] Bridal Installation bundle folder not found: C:\Users\seyib\Pictures\QUEEN B\Bridal Installation
+[2025-11-20 20:05:43] [backup] Backed up public\images\queen-b\ceo\IMG_1030.jpg to backup_assets_sync
+[2025-11-20 20:05:43] [info] Replaced CEO image with new file: C:\Users\seyib\Pictures\tinas-exquisite\tinas-exquisite\public\images\queen-b\ceo\IMG_1030.jpg
+[2025-11-20 20:05:43] [error] ERROR: There is not enough space on the disk.
+
