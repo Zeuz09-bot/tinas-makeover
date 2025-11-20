@@ -549,7 +549,7 @@ export const aboutNarrative = {
 };
 
 export const founderSpotlight = {
-  name: "Tina Okafor",
+  name: "Justina Bisola Oladipo",
   role: "Founder & Lead Artist",
   image: STOCK_PHOTOS.founderPortrait,
   bio: "Passionate about empowering women through beauty, Tina has built a reputation for creating stunning, personalized looks that celebrate each client's unique features and style.",
