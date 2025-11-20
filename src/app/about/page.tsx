@@ -47,7 +47,7 @@ export default function AboutPage() {
         <section className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-start">
           <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-muted/70">Meet the Founder</h3>
-            <p className="text-3xl font-semibold tracking-[0.25em] text-accent md:text-4xl">
+            <p className="text-2xl font-semibold tracking-[0.15em] text-accent md:text-3xl md:tracking-[0.2em] lg:text-4xl lg:tracking-[0.25em] md:whitespace-nowrap">
               {founderSpotlight.name}
             </p>
             <p className="text-xs uppercase tracking-[0.3em] text-muted/50">{founderSpotlight.role}</p>
