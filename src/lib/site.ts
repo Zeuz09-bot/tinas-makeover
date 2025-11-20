@@ -13,8 +13,8 @@ export const CONTACT = {
   email: "info@tinasmakeover.com",
   address: "No 6, Tiwatope Shopping Complex, NTA junction, along Alapata road, Ikare Akoko, Ondo State",
   hours: {
-    weekdays: "Mon–Sat: 10am–8pm",
-    sunday: "Sun: 10am–6pm",
+    weekdays: "Mon–Sat: 9am–6pm",
+    sunday: "Sun: 11am–6pm",
   },
 };
 
