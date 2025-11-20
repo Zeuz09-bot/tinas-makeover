@@ -41,8 +41,6 @@ const bridalMakeupGallery: GalleryMediaItem[] = [
   ...createImageEntries(
     "/images/queen-b/bridal/",
     [
-      "9C195688-E296-43A3-ACFC-29BD3D5A6E2F.HEIC",
-      "CFB1A762-ED6F-4782-B9C8-A54EDA0B00A2.HEIC",
       "IMG_0231.jpg",
       "IMG_0232.jpg",
       "IMG_0422.JPG",
@@ -67,15 +65,11 @@ const eventGlamGallery: GalleryMediaItem[] = [
   ...createImageEntries(
     "/images/queen-b/birthdays/",
     [
-      "Facetune_28-08-2025-16-23-49.HEIC",
       "IMG_0418.jpg",
       "IMG_0461.jpg",
       "IMG_0463.jpg",
       "IMG_0465.jpg",
       "IMG_6829.jpg",
-      "IMG_7379.HEIC",
-      "IMG_8073.HEIC",
-      "IMG_8074.HEIC",
       "IMG_8234.jpg",
       "IMG_8264.jpg",
       "IMG_8267.jpg",
@@ -96,7 +90,6 @@ const photoShootGallery: GalleryMediaItem[] = [
     "/images/queen-b/special-occasions/",
     [
       "320925BF-50C3-45DA-A4EF-8F9EA4CD00A0.JPG",
-      "IMG_0443.heic",
       "IMG_0454.jpg",
       "IMG_0455.jpg",
       "IMG_0926.jpg",
@@ -118,7 +111,7 @@ const photoShootGallery: GalleryMediaItem[] = [
 const makeupTrainingGallery: GalleryMediaItem[] = [
   ...createImageEntries(
     "/images/queen-b/hair-installation/",
-    ["IMG_0420.PNG", "IMG_0421.jpg", "558CCCAE-E21F-4216-A8EC-64A7FAD502C8.HEIC"],
+    ["IMG_0420.PNG", "IMG_0421.jpg"],
     "Training session highlight"
   ),
   ...createVideoEntries([
