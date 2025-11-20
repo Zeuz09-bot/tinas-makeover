@@ -4,8 +4,8 @@ export const BRAND = {
   tagline: "Beauty Collective",
   logoPrimary: "/images/queen-b/brand-logo/IMG_7034.jpg",
   logoSecondary: "/images/queen-b/brand-logo/E576C3A0-2F9C-42DE-887E-69A11D3355D0.JPG",
-  logoDefault: "/images/queen-b/brand-logo/logo-2.jpg",
-  logoBoutique: "/images/queen-b/brand-logo/logo-1.jpg",
+  logoDefault: "/images/queen-b/brand-logo/IMG_7034.jpg",
+  logoBoutique: "/images/queen-b/brand-logo/E576C3A0-2F9C-42DE-887E-69A11D3355D0.JPG",
 };
 
 export const CONTACT = {
