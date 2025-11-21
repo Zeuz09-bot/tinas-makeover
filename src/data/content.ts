@@ -107,6 +107,9 @@ const photoShootGallery: GalleryMediaItem[] = [
     ],
     "Editorial photoshoot capture"
   ),
+];
+
+const specialOccasionsGallery: GalleryMediaItem[] = [
   ...createImageEntries(
     "/images/queen-b/special-occasions/",
     [
@@ -126,73 +129,58 @@ const photoShootGallery: GalleryMediaItem[] = [
       "SPECIAL OCASSIONS (7).jpg",
       "SPECIAL_OCASSIONS_(1).jpg",
     ],
-    "Editorial glam capture"
+    "Special occasions glam"
   ),
 ];
 
 const makeupTrainingGallery: GalleryMediaItem[] = [
-  ...createImageEntries(
-    "/images/queen-b/hair-installation/",
-    [
-      "BRIDAL HAIR INSTALLATION (1).jpg",
-      "HAIR INSTALLATION (1).PNG",
-      "HAIR INSTALLATION (1).jpg",
-      "HAIR INSTALLATION (2).jpg",
-      "HAIR INSTALLATION (3).jpg",
-      "HAIR_INSTALLATION_(1).jpg",
-      "IMG_0420.PNG",
-      "IMG_0421.jpg",
-      "IMG_0928.jpg",
-    ],
-    "Training session highlight"
-  ),
   ...createVideoEntries([
     {
-      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      poster: "/images/queen-b/home.webp",
       video: "/images/queen-b/tutorials/3c61f08bfb1c46af891d5e80ae65744f.MP4",
-      alt: "Hands-on tutorial clip 1",
+      alt: "Training tutorial 1",
       label: "Training Tutorial",
     },
     {
-      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      poster: "/images/queen-b/home.webp",
       video: "/images/queen-b/tutorials/4a186712b8124107a712e3b7f8770b13.MP4",
-      alt: "Hands-on tutorial clip 2",
+      alt: "Training tutorial 2",
       label: "Training Tutorial",
     },
     {
-      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      poster: "/images/queen-b/home.webp",
       video: "/images/queen-b/tutorials/TUTORIALS (1).MP4",
-      alt: "Hands-on tutorial clip 3",
+      alt: "Training tutorial 3",
       label: "Training Tutorial",
     },
     {
-      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      poster: "/images/queen-b/home.webp",
       video: "/images/queen-b/tutorials/TUTORIALS (1).mov",
-      alt: "Hands-on tutorial clip 4",
+      alt: "Training tutorial 4",
       label: "Training Tutorial",
     },
     {
-      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      poster: "/images/queen-b/home.webp",
       video: "/images/queen-b/tutorials/TUTORIALS (2).MP4",
-      alt: "Hands-on tutorial clip 5",
+      alt: "Training tutorial 5",
       label: "Training Tutorial",
     },
     {
-      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      poster: "/images/queen-b/home.webp",
       video: "/images/queen-b/tutorials/TUTORIALS (3).MP4",
-      alt: "Hands-on tutorial clip 6",
+      alt: "Training tutorial 6",
       label: "Training Tutorial",
     },
     {
-      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      poster: "/images/queen-b/home.webp",
       video: "/images/queen-b/tutorials/RPReplay_Final1763318148.mov",
-      alt: "Hands-on tutorial clip 7",
+      alt: "Training tutorial 7",
       label: "Training Tutorial",
     },
     {
-      poster: "/images/queen-b/hair-installation/IMG_0420.PNG",
+      poster: "/images/queen-b/home.webp",
       video: "/images/queen-b/tutorials/c8c13f9fe7854b1295db30706dbd429c.MP4",
-      alt: "Hands-on tutorial clip 8",
+      alt: "Training tutorial 8",
       label: "Training Tutorial",
     },
   ]),
@@ -370,6 +358,17 @@ export const makeupPackages: ServicePackage[] = [
     href: "/services/event-glam",
   },
   {
+    title: "Special Occasions",
+    description: "Elevated glam for dinners, red-carpet moments, graduations, and intimate celebrations.",
+    image: "/images/queen-b/special-occasions/320925BF-50C3-45DA-A4EF-8F9EA4CD00A0.JPG",
+    highlights: [
+      "Soft or statement glam tailored to your event",
+      "Looks that photograph beautifully in any lighting",
+      "Flexible timing to fit your celebration schedule",
+    ],
+    href: "/services/special-occasions",
+  },
+  {
     title: "Photo Shoots",
     description: "Studio lighting-ready makeup for campaigns, commercials, and creatives.",
     image: STOCK_PHOTOS.glamCloseup,
@@ -481,6 +480,29 @@ export const serviceDetails: ServiceDetail[] = [
       "Optional glitter & statement accents",
     ],
     gallery: eventGlamGallery,
+  },
+  {
+    slug: "special-occasions",
+    category: "makeup",
+    title: "Special Occasions Glam",
+    heroImage: "/images/queen-b/special-occasions/320925BF-50C3-45DA-A4EF-8F9EA4CD00A0.JPG",
+    summary:
+      "Elevated glam for dinners, graduations, red-carpet events, and intimate celebrations where you want to feel unforgettable.",
+    description: [
+      "From soft, romantic glam to bold, camera-ready looks, we design your makeup around the mood, dress code, and venue of your special occasion.",
+      "We pay close attention to undertones, lighting conditions, and how long you need your look to last so you stay confident from first photo to final toast.",
+    ],
+    highlights: [
+      "Looks tailored to your outfit and event vibe",
+      "Long-wear, comfortable finishes",
+      "Options for subtle or statement detail work",
+    ],
+    includes: [
+      "Event-focused skin prep and priming",
+      "Custom eye, lip, and complexion design",
+      "Touch-up guidance for the rest of your celebration",
+    ],
+    gallery: specialOccasionsGallery,
   },
   {
     slug: "photoshoot-glam",
