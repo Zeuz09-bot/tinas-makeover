@@ -10,7 +10,7 @@ export const BRAND = {
 
 export const CONTACT = {
   phone: "+2348138534279",
-  email: "info@tinasmakeover.com",
+  email: "oladipojustina49@gmail.com",
   address: "No 6, Tiwatope Shopping Complex, NTA junction, along Alapata road, Ikare Akoko, Ondo State",
   hours: {
     weekdays: "Mon–Sat: 9am–6pm",
