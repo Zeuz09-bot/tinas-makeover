@@ -198,7 +198,7 @@ function ProductsShowcase() {
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted/60">Artist moodboard</p>
               <div className="relative mt-4 aspect-[3/4] w-full overflow-hidden rounded-[28px]">
                 <Image
-                  src={STOCK_PHOTOS.eventGlam}
+                  src="/images/queen-b/birthdays/birthdays (5).jpg"
                   alt="Editorial glam showcase"
                   fill
                   sizes="(max-width: 768px) 80vw, 400px"
